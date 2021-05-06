@@ -28,25 +28,20 @@ namespace OPSIGO.CLI
             var counter = pesan.Length;
             var text = new List<string>();
             
-            for (int i = 0; i < K; i++)
-			{
-				for (int j = 0; j < K; j++)
-				{
-					arrayInput[i, j] = pesan[pesan.Length - counter].ToString();
-					counter--;
-				}
-			}
+            for (int i = 0; i < K; i++) {
+                for (int j = 0; j < K; j++) {
+                    arrayInput[i, j] = pesan[pesan.Length - counter].ToString();
+                    counter--;
+                }
+            }
 
-			for (int i = (K - 1); i >= 0; i--)
-			{
-				for (int j = 0; j < K; j++)
-				{
-					arrayRotate[j, i] = arrayInput[(K - 1 - i), j];
-				}
-			}
+			for (int i = (K - 1); i >= 0; i--) {
+                for (int j = 0; j < K; j++) {
+                    arrayRotate[j, i] = arrayInput[(K - 1 - i), j];
+                }
+            }
             
-            foreach (var item in arrayRotate)
-            {
+            foreach (var item in arrayRotate) {
                 var rahasia = item.Select(x => x.ToString()).ToList();
                 text.Add(string.Join("", rahasia));
             }
@@ -66,8 +61,7 @@ namespace OPSIGO.CLI
         {
             if (reducedNum < 0) return null;
         
-            if (reducedNum == 0)
-            {
+            if (reducedNum == 0) {
                 var item = "";
                 for (int i = 0; i < index; i++)
                     item += $"{arr[i]}, ";
@@ -76,13 +70,13 @@ namespace OPSIGO.CLI
         
             int prev = (index == 0) ? 1 : arr[index - 1];
     
-            for (int k = prev; k <= n; k++)
-            {
+            for (int k = prev; k <= n; k++) {
                 arr[index] = k;
                 var data = cari_kombinasi(arr, index + 1, n, reducedNum - k, stack);
                 if (data != null)
                     stack.Push(data);
             }
+            
             if (stack.First() == n.ToString())
                 return string.Join(Environment.NewLine, stack);
 
