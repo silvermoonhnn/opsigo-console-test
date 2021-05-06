@@ -34,8 +34,8 @@ namespace OPSIGO.CLI
                     counter--;
                 }
             }
-
-			for (int i = (K - 1); i >= 0; i--) {
+            
+            for (int i = (K - 1); i >= 0; i--) {
                 for (int j = 0; j < K; j++) {
                     arrayRotate[j, i] = arrayInput[(K - 1 - i), j];
                 }
@@ -76,7 +76,7 @@ namespace OPSIGO.CLI
                 if (data != null)
                     stack.Push(data);
             }
-            
+
             if (stack.First() == n.ToString())
                 return string.Join(Environment.NewLine, stack);
 
