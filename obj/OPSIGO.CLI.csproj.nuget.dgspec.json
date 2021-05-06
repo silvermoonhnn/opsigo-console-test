@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/hannaafiah/Projects/opsigo-console-test/OPSIGO.CLI/OPSIGO.CLI.csproj": {}
+    "/Users/hannaafiah/Projects/opsigo-console/OPSIGO.CLI/OPSIGO.CLI.csproj": {}
   },
   "projects": {
-    "/Users/hannaafiah/Projects/opsigo-console-test/OPSIGO.CLI/OPSIGO.CLI.csproj": {
+    "/Users/hannaafiah/Projects/opsigo-console/OPSIGO.CLI/OPSIGO.CLI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hannaafiah/Projects/opsigo-console-test/OPSIGO.CLI/OPSIGO.CLI.csproj",
+        "projectUniqueName": "/Users/hannaafiah/Projects/opsigo-console/OPSIGO.CLI/OPSIGO.CLI.csproj",
         "projectName": "OPSIGO.CLI",
-        "projectPath": "/Users/hannaafiah/Projects/opsigo-console-test/OPSIGO.CLI/OPSIGO.CLI.csproj",
+        "projectPath": "/Users/hannaafiah/Projects/opsigo-console/OPSIGO.CLI/OPSIGO.CLI.csproj",
         "packagesPath": "/Users/hannaafiah/.nuget/packages/",
-        "outputPath": "/Users/hannaafiah/Projects/opsigo-console-test/OPSIGO.CLI/obj/",
+        "outputPath": "/Users/hannaafiah/Projects/opsigo-console/OPSIGO.CLI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/hannaafiah/.nuget/NuGet/NuGet.Config"

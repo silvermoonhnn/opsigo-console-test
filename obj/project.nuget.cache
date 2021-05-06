@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MUeRB1FJ0KkhBY0aiZdi09c37lOhghPRtGNedGGcOlnMEsuwonS8TB1g2EWB+iRrvpXhSq13sh6z+5bWqg5lpw==",
+  "dgSpecHash": "2xSIrb1aRAzaDNjErpQsR6chikNFmj0uqbX+ZJaY6yqdehFgfCyZNfv07bz2ohxfVs6LCeGLsZTUvlKOxr4Riw==",
   "success": true,
-  "projectFilePath": "/Users/hannaafiah/Projects/opsigo-console-test/OPSIGO.CLI/OPSIGO.CLI.csproj",
+  "projectFilePath": "/Users/hannaafiah/Projects/opsigo-console/OPSIGO.CLI/OPSIGO.CLI.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

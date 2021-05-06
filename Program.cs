@@ -58,28 +58,35 @@ namespace OPSIGO.CLI
         {
             int []arr = new int [input];
 
-            cari_kombinasi(arr, 0, input, input);
+            var data = cari_kombinasi(arr, 0, input, input, new Stack<string>());
+            Console.WriteLine(data);
         }
 
-        static void cari_kombinasi(int[] arr, int index, int n, int reducedNum)
+        static string cari_kombinasi(int[] arr, int index, int n, int reducedNum, Stack<string> stack)
         {
-            if (reducedNum < 0) return;
+            if (reducedNum < 0) return null;
         
             if (reducedNum == 0)
             {
+                var item = "";
                 for (int i = 0; i < index; i++)
-                    Console.Write (arr[i] + ", ");
-                    Console.WriteLine();
-                return;
+                    item += $"{arr[i]}, ";
+                return item.TrimEnd(new char[] { ',',' ' });
             }
         
             int prev = (index == 0) ? 1 : arr[index - 1];
     
-            for (int k = prev; k <= n ; k++)
+            for (int k = prev; k <= n; k++)
             {
                 arr[index] = k;
-                cari_kombinasi(arr, index + 1, n, reducedNum - k);
+                var data = cari_kombinasi(arr, index + 1, n, reducedNum - k, stack);
+                if (data != null)
+                    stack.Push(data);
             }
+            if (stack.First() == n.ToString())
+                return string.Join(Environment.NewLine, stack);
+
+            return null;
         }
     }
 }
